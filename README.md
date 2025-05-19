@@ -3,16 +3,8 @@
   ![Logo](./src/assets/logo1.webp)
  
 A practical implementation of robust form validation using Zod schemas in a React application with TypeScript.
-
-
-
-  ![Form Preview](./src/assets/Screenshot.png)  
-
-
-
-
-
-
+Zod is a TypeScript-first schema validation library that helps you define and validate data structures with strong typing and runtime validation.
+It is designed to be declarative, type-safe, and developer-friendly.
 
 ## 📋 Table of Contents
 - [Features](#-features)
@@ -63,7 +55,12 @@ npm run dev
 ```
 
 
-Visit http://localhost:5173 to view the form.
+Visit **http://localhost:5173** to view the form.
+
+
+
+
+![Form Preview](./src/assets/Screenshot.png)  
 
 
 
