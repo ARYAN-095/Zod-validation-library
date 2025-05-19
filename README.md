@@ -1,12 +1,12 @@
  # React Form Validation with Zod 🔒
 
-  ![Logo](./assets/log1.webp)
+  ![Logo](./public/assets/log1.webp)
  
 A practical implementation of robust form validation using Zod schemas in a React application with TypeScript.
 
 
 
-  ![Form Preview](./asstets/Screenshot.png)  
+  ![Form Preview](./public/assets/Screenshot.png)  
 
 
 ## 📋 Table of Contents
@@ -141,7 +141,7 @@ const formatZodError = (zodError: z.ZodError) => {
 
 
 
-![workflow diagram](./assets/workflow.png)
+![workflow diagram](./public/assets/workflow.png)
 
 
 # 🎓 Learning Journey
