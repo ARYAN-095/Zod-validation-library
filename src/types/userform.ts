@@ -21,7 +21,7 @@ export const userFormSchema = z.object({
 });
 
 // Export the type
-export type UserForm = z.infer<typeof userFormSchema>;
+export type userFormSchema = z.infer<typeof userFormSchema>;
 
 // Export the error type
 export type FormErrors = Partial<Record<keyof UserForm, string[]>>;

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import type { UserForm as UserFormType, FormErrors } from './types/userform';
+import type {FormErrors} from './types/userform';
+import { userFormSchema} from './types/userform';
+ 
 
 const UserForm = () => {
-    const [formData, setFormData] = useState<UserFormType>({
+    const [formData, setFormData] = useState<userFormSchema>({
         name: '',
         age: 0,
         email: '',
@@ -26,6 +28,15 @@ const UserForm = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Validation logic would go here
+
+        const result= userFormSchema.safeParse(formData);
+
+        if(!result.success){
+           setErrors(result.error.formErrors.fieldErrors);
+        }else{
+            setErrors({});
+        }
+
         console.log(formData);
     };
 
